@@ -1,0 +1,14 @@
+name: pinterest workflow
+on: push 
+jobs:
+  hello-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: "welcome"
+        run:  echo "welcome to the deepaarti"
+
+bye-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: "tchuss"
+        run:  echo "tchuss like the video bitte."
