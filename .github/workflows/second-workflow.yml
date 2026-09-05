@@ -1,5 +1,7 @@
-name: pinterest workflow
-on: push 
+name: Pinterest Workflow
+on: 
+  push:
+  workflow_dispatch: 
 jobs:
   hello-job: 
     runs-on: ubuntu-latest
