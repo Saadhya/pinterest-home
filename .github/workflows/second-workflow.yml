@@ -9,8 +9,8 @@ jobs:
       - name: "welcome"
         run:  echo "welcome to the deepaarti"
 
-bye-job: 
-    runs-on: ubuntu-latest
-    steps:
-      - name: "tchuss"
-        run:  echo "tchuss like the video bitte."
+  bye-job: 
+      runs-on: ubuntu-latest
+      steps:
+        - name: "tchuss"
+          run:  echo "tchuss like the video bitte."
