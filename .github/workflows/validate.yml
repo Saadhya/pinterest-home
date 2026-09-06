@@ -24,8 +24,8 @@ jobs:
     - name: validate TSX file
       run: test -f src/main.tsx
 
-    - name: validate TypeScript file
-      run: npx tsc --noEmit --project tsconfig.app.json
+    - name: validate JavaScript file
+      run: node --check script.js
 
     - name: validate css file
-      run: test -f src/styles.css
+      run: npm run build
