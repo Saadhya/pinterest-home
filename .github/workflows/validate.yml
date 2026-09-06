@@ -12,4 +12,7 @@ jobs:
       uses: test -f index.html
 
     - name: validate TSX file
-      uses: test -f src/main.tsx
+      uses: test -f src/helo.tsx
+
+    - name: validate js code
+      uses: node --check src/types.ts
