@@ -1,5 +1,7 @@
 name: Validate Files
-on: push
+on: 
+  push:
+  workflow_dispatch: 
 jobs:
   file-validate:
     runs-on: "ubuntu-latest"
@@ -9,10 +11,10 @@ jobs:
       uses: actions/checkout@v4
 
     - name: validate html file
-      uses: test -f index.html
+      run: test -f index.html
 
     - name: validate TSX file
-      uses: test -f src/helo.tsx
+      run: test -f src/main.tsx
 
-    - name: validate js code
-      uses: node --check src/types.ts
+    - name: validate TypeScript file
+      run: test -f src/types.ts

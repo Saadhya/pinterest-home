@@ -1,6 +1,6 @@
 name: Pinterest Workflow
 on: 
-  push:
+  # push:
   workflow_dispatch: 
 jobs:
   hello-job: 
