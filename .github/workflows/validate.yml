@@ -1,0 +1,15 @@
+name: Validate Files
+on: push
+jobs:
+  file-validate:
+    runs-on: "ubuntu@latest"
+
+    steps: 
+    - name: Get repo code on VM
+      uses: actions/checkout@v4
+
+    - name: validate html file
+      uses: test -f index.html
+
+    - name: validate TSX file
+      uses: test -f src/main.tsx
