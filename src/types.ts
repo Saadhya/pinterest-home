@@ -7,4 +7,4 @@ export type Pin = {
   imageAlt: string
   height: number
   topic: string
-}
+
