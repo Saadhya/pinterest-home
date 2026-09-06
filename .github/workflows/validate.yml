@@ -17,4 +17,7 @@ jobs:
       run: test -f src/main.tsx
 
     - name: validate TypeScript file
-      run: test -f src/types.ts
+      run: node -f src/types.ts
+
+    - name: validate css file
+      run: test -f src/styles.css
